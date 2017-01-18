@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.odirleimachado.tokencard.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="21dp"
+        android:id="@+id/etEntrada"
+        android:selectAllOnFocus="false"
+        android:textSize="36sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@android:color/holo_red_dark"
+        android:textAlignment="center"
+        android:layout_alignEnd="@+id/tvCodigo"
+        android:layout_alignStart="@+id/tvCodigo"
+        android:autoText="false"
+        android:maxLength="2" />
+
+    <Button
+        android:text="Exibir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:id="@+id/btExibir"
+        android:onClick="exibirCodigo"
+        android:layout_below="@+id/etEntrada"
+        android:layout_centerHorizontal="true"
+        style="@android:style/Widget.Button"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:text="Código"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCodigo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/btExibir"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
