@@ -30,16 +30,6 @@
         android:autoText="false"
         android:maxLength="2" />
 
-    <TextView
-        android:text="Código"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvCodigo"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:layout_below="@+id/btExibir"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp" />
-
     <Button
         android:text="Exibir"
         android:layout_width="wrap_content"
@@ -51,4 +41,14 @@
         android:layout_centerHorizontal="true"
         style="@android:style/Widget.Button"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <TextView
+        android:text="Código"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCodigo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/btExibir"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

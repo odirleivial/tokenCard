@@ -75,12 +75,11 @@ public class MainActivity extends AppCompatActivity {
 
 //        variável com o valor recuperado do campo de entrada
         int vlrEntrada;
-
         try{
             vlrEntrada = Integer.parseInt(etEntrada.getText().toString());
         }catch (Exception e){
             vlrEntrada = 0;
-            tvCodigo.setText("");
+          //  tvCodigo.setText("");
         }
 
 //        Array com os códigos
